@@ -80,9 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         form.querySelectorAll('.form-input').forEach(inp => {
             inp.addEventListener('blur', () => validate(inp));
-            inp.addEventListener('input', () => {
-                form.querySelectorAll('.form-input').forEach(i => i.classList.remove('valid'));
-            });
+            inp.addEventListener('input', () => { if (inp.classList.contains('error')) validate(inp); });
         });
         form.addEventListener('submit', e => {
             e.preventDefault();
