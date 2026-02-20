@@ -486,7 +486,7 @@ section {
     pointer-events: auto;
 }
 
-.nav-mobile a {
+.nav-mobile a:not(.btn) {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--white);
@@ -496,9 +496,30 @@ section {
     opacity: 0;
 }
 
+.nav-mobile .btn {
+    font-size: 1rem;
+    padding: 16px 32px;
+    margin-top: 8px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+}
+
+.nav-mobile .btn-primary {
+    background: var(--white);
+    color: var(--black) !important;
+}
+
+.nav-mobile .btn-secondary {
+    background: transparent;
+    color: var(--white) !important;
+    border: 1px solid var(--accent-border);
+}
+
+/* Specific visibility for links inside open mobile menu */
 .nav-mobile.open a {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 /* Stagger animation for links */
