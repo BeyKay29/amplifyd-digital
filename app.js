@@ -12,19 +12,28 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    /* --- Mobile Menu --- */
     const toggle = document.getElementById('nav-toggle');
     const mobile = document.getElementById('nav-mobile');
-    if (toggle && mobile) {
+    const root = document.documentElement;
+    if (toggle && mobile && nav) {
         toggle.addEventListener('click', () => {
             const open = mobile.classList.toggle('open');
             toggle.classList.toggle('active', open);
-            document.body.style.overflow = open ? 'hidden' : '';
+            nav.classList.toggle('menu-open', open);
+            if (open) {
+                root.classList.add('lock-scroll');
+                document.body.classList.add('lock-scroll');
+            } else {
+                root.classList.remove('lock-scroll');
+                document.body.classList.remove('lock-scroll');
+            }
         });
         mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
             mobile.classList.remove('open');
             toggle.classList.remove('active');
-            document.body.style.overflow = '';
+            nav.classList.remove('menu-open');
+            root.classList.remove('lock-scroll');
+            document.body.classList.remove('lock-scroll');
         }));
     }
 

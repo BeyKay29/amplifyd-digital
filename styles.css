@@ -69,8 +69,17 @@
 
     /* Z-index */
     --z-nav: 100;
-    --z-modal: 200;
-    --z-toast: 300;
+    --z-mobile-menu: 999;
+    --z-mobile-toggle: 1000;
+    --z-modal: 1100;
+    --z-toast: 1200;
+}
+
+/* Scroll Lock */
+.lock-scroll {
+    overflow: hidden !important;
+    height: 100% !important;
+    position: relative;
 }
 
 /* ---------- Reset ---------- */
@@ -369,7 +378,15 @@ section {
     backdrop-filter: blur(40px) saturate(180%);
     -webkit-backdrop-filter: blur(40px) saturate(180%);
     border-bottom: 1px solid var(--accent-border);
-    padding: 12px 0;
+    padding: 10px 0;
+}
+
+/* Stable header height when menu is open to prevent jumping */
+.nav.menu-open {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border-bottom: none !important;
+    z-index: var(--z-mobile-toggle);
 }
 
 .nav .container {
@@ -421,7 +438,7 @@ section {
     gap: 5px;
     cursor: pointer;
     padding: 8px;
-    z-index: calc(var(--z-nav) + 10);
+    z-index: var(--z-mobile-toggle);
 }
 
 .nav-toggle span {
@@ -448,7 +465,7 @@ section {
 .nav-mobile {
     position: fixed;
     inset: 0;
-    z-index: 999;
+    z-index: var(--z-mobile-menu);
     background: #000000;
     display: flex;
     flex-direction: column;
@@ -459,6 +476,8 @@ section {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s;
+    /* Ensure no scroll even if content is long for now, or use overflow-y: auto if needed */
+    overflow: hidden;
 }
 
 .nav-mobile.open {
@@ -483,11 +502,25 @@ section {
 }
 
 /* Stagger animation for links */
-.nav-mobile.open a:nth-child(1) { transition-delay: 0.1s; }
-.nav-mobile.open a:nth-child(2) { transition-delay: 0.15s; }
-.nav-mobile.open a:nth-child(3) { transition-delay: 0.2s; }
-.nav-mobile.open a:nth-child(4) { transition-delay: 0.25s; }
-.nav-mobile.open a:nth-child(5) { transition-delay: 0.3s; }
+.nav-mobile.open a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.nav-mobile.open a:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.nav-mobile.open a:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.nav-mobile.open a:nth-child(4) {
+    transition-delay: 0.25s;
+}
+
+.nav-mobile.open a:nth-child(5) {
+    transition-delay: 0.3s;
+}
 
 
 /* ---------- Hero ---------- */
