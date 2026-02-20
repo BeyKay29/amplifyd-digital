@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leistungen & Preise — AMPLIFYD Digital</title>
+    <meta name="description"
+        content="Werbevideos, Webdesign & Social Media Marketing: Unsere Leistungspakete mit transparenten Preisen. Von Starter bis Enterprise.">
+    <link rel="canonical" href="https://amplifyd.digital/leistungen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tab-bar {
+            display: flex;
+            gap: 4px;
+            background: var(--anthracite-2);
+            border-radius: var(--r-full);
+            padding: 4px;
+            max-width: 520px;
+            margin: 0 auto var(--s8);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: var(--r-full);
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--gray-3);
+            cursor: pointer;
+            transition: all var(--t-fast);
+            text-align: center;
+        }
+
+        .tab-btn.active {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .tab-btn:hover:not(.active) {
+            color: var(--white);
+        }
+
+        .pricing-panel {
+            display: none;
+        }
+
+        .pricing-panel.active {
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" aria-label="Hauptnavigation">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="" width="32"
+                    height="32">AMPLIFYD</a>
+            <div class="nav-links">
+                <a href="leistungen.html" style="color: var(--white);">Leistungen</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="newsletter.html">Insights</a>
+                <a href="index.html#kontakt">Kontakt</a>
+                <a href="index.html#kontakt" class="btn btn-primary nav-cta"
+                    style="padding:10px 22px;font-size:0.85rem;">Projekt starten</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle"
+                aria-label="Menü"><span></span><span></span><span></span></button>
+        </div>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="leistungen.html">Leistungen</a><a href="projekte.html">Projekte</a><a
+                href="newsletter.html">Insights</a><a href="index.html#kontakt">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="min-height: auto; padding: 160px 0 var(--s9);">
+        <div class="container">
+            <div class="hero-content" style="max-width: 700px;">
+                <p class="section-eyebrow reveal">Leistungen & Preise</p>
+                <h1 class="reveal reveal-d1" style="font-size: clamp(2.4rem, 5vw, 4.2rem);">Kein Rätselraten.<br>Klare
+                    Pakete, klare Preise.</h1>
+                <p class="hero-desc reveal reveal-d2">Wähle die Disziplin, die dich interessiert. Jedes Paket ist so
+                    konzipiert, dass du vom ersten Tag an Ergebnisse siehst.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- TAB NAVIGATION -->
+    <section style="padding: var(--s10) 0;">
+        <div class="container">
+            <div class="tab-bar reveal">
+                <button class="tab-btn active" data-pricing-tab="videos">Werbevideos</button>
+                <button class="tab-btn" data-pricing-tab="web">Webdesign</button>
+                <button class="tab-btn" data-pricing-tab="social">Social Media</button>
+            </div>
+
+            <!-- ===== WERBEVIDEOS ===== -->
+            <div class="pricing-grid pricing-panel active" id="videos" data-pricing-panel="videos">
+                <!-- Starter -->
+                <div class="pricing-card reveal reveal-d1">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-name">Kickstart</div>
+                    <div class="pricing-price">€1.490</div>
+                    <div class="pricing-period">einmalig · pro Video</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">1 Werbevideo (bis 30 Sek.)</div>
+                        <div class="pricing-feature">Konzept & Storyboard</div>
+                        <div class="pricing-feature">Professioneller Dreh (½ Tag)</div>
+                        <div class="pricing-feature">Color Grading & Schnitt</div>
+                        <div class="pricing-feature">Lizenzfreie Musik</div>
+                        <div class="pricing-feature">1 Korrekturschleife</div>
+                        <div class="pricing-feature">Lieferung in 3 Formaten (16:9, 9:16, 1:1)</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+                <!-- Professional -->
+                <div class="pricing-card featured reveal reveal-d2">
+                    <div class="pricing-badge">Beliebteste Wahl</div>
+                    <div class="pricing-tier">Professional</div>
+                    <div class="pricing-name">Impact</div>
+                    <div class="pricing-price">€3.490</div>
+                    <div class="pricing-period">einmalig · Paket</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">3 Werbevideos (je bis 60 Sek.)</div>
+                        <div class="pricing-feature">Kreativkonzept & Strategie-Call</div>
+                        <div class="pricing-feature">Professioneller Dreh (1 Tag)</div>
+                        <div class="pricing-feature">Motion Graphics & Animationen</div>
+                        <div class="pricing-feature">Untertitel & Texteinblendungen</div>
+                        <div class="pricing-feature">3 Korrekturschleifen</div>
+                        <div class="pricing-feature">Lieferung in allen Formaten</div>
+                        <div class="pricing-feature">Thumbnail-Design für jedes Video</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-primary">Paket anfragen</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="pricing-card reveal reveal-d3">
+                    <div class="pricing-tier">Enterprise</div>
+                    <div class="pricing-name">Dominate</div>
+                    <div class="pricing-price">€7.900</div>
+                    <div class="pricing-period">einmalig · Paket</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">6 Werbevideos (je bis 90 Sek.)</div>
+                        <div class="pricing-feature">Full-Service Kreativdirektion</div>
+                        <div class="pricing-feature">2-Tages-Dreh mit Regisseur</div>
+                        <div class="pricing-feature">Professionelle Schauspieler/Models</div>
+                        <div class="pricing-feature">Cinematic Color Grading</div>
+                        <div class="pricing-feature">Sounddesign & Voice-Over</div>
+                        <div class="pricing-feature">Unbegrenzte Korrekturschleifen</div>
+                        <div class="pricing-feature">A/B-Test Varianten inklusive</div>
+                        <div class="pricing-feature">Performance-Analyse nach Launch</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+            </div>
+
+            <!-- ===== WEBDESIGN ===== -->
+            <div class="pricing-grid pricing-panel" id="webdesign" data-pricing-panel="web">
+                <!-- Starter -->
+                <div class="pricing-card reveal reveal-d1">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-name">Foundation</div>
+                    <div class="pricing-price">€2.900</div>
+                    <div class="pricing-period">einmalig</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">One-Page Webdesign</div>
+                        <div class="pricing-feature">Responsive Design (Mobile-First)</div>
+                        <div class="pricing-feature">Bis zu 5 Sektionen</div>
+                        <div class="pricing-feature">Kontaktformular</div>
+                        <div class="pricing-feature">SEO-Grundoptimierung</div>
+                        <div class="pricing-feature">Cookie-Banner (DSGVO)</div>
+                        <div class="pricing-feature">1 Korrekturschleife</div>
+                        <div class="pricing-feature">Hosting-Beratung</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+                <!-- Professional -->
+                <div class="pricing-card featured reveal reveal-d2">
+                    <div class="pricing-badge">Beliebteste Wahl</div>
+                    <div class="pricing-tier">Professional</div>
+                    <div class="pricing-name">Elevate</div>
+                    <div class="pricing-price">€5.900</div>
+                    <div class="pricing-period">einmalig</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">Multi-Page Webseite (bis 7 Seiten)</div>
+                        <div class="pricing-feature">Custom UI/UX Design</div>
+                        <div class="pricing-feature">Micro-Animationen & Interaktionen</div>
+                        <div class="pricing-feature">Blog / News-Bereich</div>
+                        <div class="pricing-feature">Erweiterte SEO-Optimierung</div>
+                        <div class="pricing-feature">Google Analytics Integration</div>
+                        <div class="pricing-feature">3 Korrekturschleifen</div>
+                        <div class="pricing-feature">CMS-Einrichtung auf Wunsch</div>
+                        <div class="pricing-feature">3 Monate Support inklusive</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-primary">Paket anfragen</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="pricing-card reveal reveal-d3">
+                    <div class="pricing-tier">Enterprise</div>
+                    <div class="pricing-name">Prestige</div>
+                    <div class="pricing-price">€12.900</div>
+                    <div class="pricing-period">einmalig</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">Vollständige Webplattform (unbegrenzte Seiten)</div>
+                        <div class="pricing-feature">Exklusives Brand-Design</div>
+                        <div class="pricing-feature">Individuelle Web-Applikations-Features</div>
+                        <div class="pricing-feature">Professional Photoshoot — Team & Räumlichkeiten</div>
+                        <div class="pricing-feature">Cinematic Hero-Videos für jede Seite</div>
+                        <div class="pricing-feature">Conversion-Optimierung & A/B-Testing</div>
+                        <div class="pricing-feature">Mehrsprachigkeit (DE/EN)</div>
+                        <div class="pricing-feature">Unbegrenzte Korrekturschleifen</div>
+                        <div class="pricing-feature">12 Monate Priority-Support</div>
+                        <div class="pricing-feature">Laufende Performance-Optimierung</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+            </div>
+
+            <!-- ===== SOCIAL MEDIA ===== -->
+            <div class="pricing-grid pricing-panel" id="social" data-pricing-panel="social">
+                <!-- Starter -->
+                <div class="pricing-card reveal reveal-d1">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-name">Presence</div>
+                    <div class="pricing-price">€990</div>
+                    <div class="pricing-period">pro Monat · 3 Monate Mindestlaufzeit</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">2 Plattformen (z.B. Instagram + TikTok)</div>
+                        <div class="pricing-feature">8 Posts / Monat (Feed + Stories)</div>
+                        <div class="pricing-feature">2 Reels / TikToks pro Woche</div>
+                        <div class="pricing-feature">Content-Planung & Redaktionsplan</div>
+                        <div class="pricing-feature">Basis Community-Management</div>
+                        <div class="pricing-feature">Monatliches Reporting</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+                <!-- Professional -->
+                <div class="pricing-card featured reveal reveal-d2">
+                    <div class="pricing-badge">Beliebteste Wahl</div>
+                    <div class="pricing-tier">Professional</div>
+                    <div class="pricing-name">Growth</div>
+                    <div class="pricing-price">€1.990</div>
+                    <div class="pricing-period">pro Monat · 3 Monate Mindestlaufzeit</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">3 Plattformen</div>
+                        <div class="pricing-feature">16 Posts / Monat</div>
+                        <div class="pricing-feature">4 Reels / TikToks pro Woche</div>
+                        <div class="pricing-feature">Strategie & Content-Kreation</div>
+                        <div class="pricing-feature">Hashtag- & Trend-Research</div>
+                        <div class="pricing-feature">Aktives Community-Management</div>
+                        <div class="pricing-feature">Influencer-Kooperationsvermittlung</div>
+                        <div class="pricing-feature">Bi-Weekly Strategy Calls</div>
+                        <div class="pricing-feature">Detailliertes Performance-Reporting</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-primary">Paket anfragen</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="pricing-card reveal reveal-d3">
+                    <div class="pricing-tier">Enterprise</div>
+                    <div class="pricing-name">Dominance</div>
+                    <div class="pricing-price">€3.990</div>
+                    <div class="pricing-period">pro Monat · 6 Monate Mindestlaufzeit</div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">Alle relevanten Plattformen</div>
+                        <div class="pricing-feature">Täglicher Content (30+ Posts / Monat)</div>
+                        <div class="pricing-feature">6 Reels / TikToks pro Woche</div>
+                        <div class="pricing-feature">Full-Service Content-Produktion</div>
+                        <div class="pricing-feature">Paid Social Ad Management (Budget exkl.)</div>
+                        <div class="pricing-feature">UGC-Koordination & Briefings</div>
+                        <div class="pricing-feature">Dedicated Account Manager</div>
+                        <div class="pricing-feature">Wöchentliche Strategy Calls</div>
+                        <div class="pricing-feature">Echtzeit-Dashboard & Reporting</div>
+                        <div class="pricing-feature">Krisenmanagement & PR-Support</div>
+                    </div>
+                    <a href="index.html#kontakt" class="btn btn-secondary">Paket anfragen</a>
+                </div>
+            </div>
+
+            <!-- Hinweis -->
+            <div class="text-center reveal" style="margin-top: var(--s8);">
+                <p class="text-sm text-gray">Alle Preise verstehen sich als Nettopreise zzgl. MwSt. · Individuelle
+                    Pakete auf Anfrage möglich.</p>
+                <a href="index.html#kontakt" class="btn btn-ghost" style="margin-top: var(--s5);">
+                    Individuelles Angebot anfragen
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="" width="32"
+                            height="32" loading="lazy">AMPLIFYD</a>
+                    <p>Premium Digitalagentur für Marken, die dominieren wollen.</p>
+                </div>
+                <div>
+                    <h5>Leistungen</h5>
+                    <ul>
+                        <li><a href="leistungen.html#videos">Werbevideos</a></li>
+                        <li><a href="leistungen.html#webdesign">Webdesign</a></li>
+                        <li><a href="leistungen.html#social">Social Media</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Agentur</h5>
+                    <ul>
+                        <li><a href="projekte.html">Projekte</a></li>
+                        <li><a href="newsletter.html">Insights</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Rechtliches</h5>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMPLIFYD Digital.</p>
+                <p style="display:flex;gap:20px;"><a href="#">Instagram</a><a href="#">LinkedIn</a><a
+                        href="#">TikTok</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen">
+        <div class="container">
+            <div class="cookie-inner">
+                <p class="cookie-text">Wir verwenden Cookies. <a href="datenschutz.html">Mehr erfahren</a></p>
+                <div class="cookie-actions"><button class="cookie-btn cookie-btn-decline"
+                        id="cookie-decline">Ablehnen</button><button class="cookie-btn cookie-btn-accept"
+                        id="cookie-accept">Akzeptieren</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
