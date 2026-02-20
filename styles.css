@@ -370,7 +370,7 @@ section {
     width: 100%;
     z-index: var(--z-nav);
     padding: 16px 0;
-    transition: all var(--t-base);
+    transition: background var(--t-fast), padding var(--t-fast), border var(--t-fast);
 }
 
 .nav.scrolled {
@@ -383,17 +383,22 @@ section {
 
 /* Stable header height when menu is open to prevent jumping */
 .nav.menu-open {
-    background: transparent !important;
+    background: #000000 !important;
+    /* Match menu background to prevent flicker */
     backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     border-bottom: none !important;
+    transition: background 0.1s var(--ease);
     z-index: var(--z-mobile-toggle);
 }
 
 .nav.menu-open .nav-logo,
-.nav.menu-open .nav-cta {
+.nav.menu-open .nav-cta,
+.nav.menu-open .nav-links {
     pointer-events: none;
-    opacity: 0.2;
-    /* Subtle hint it's inactive */
+    opacity: 0 !important;
+    /* Hide completely during menu */
+    transition: opacity 0.2s var(--ease);
 }
 
 .nav .container {
