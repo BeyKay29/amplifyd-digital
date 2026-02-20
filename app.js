@@ -80,7 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         form.querySelectorAll('.form-input').forEach(inp => {
             inp.addEventListener('blur', () => validate(inp));
-            inp.addEventListener('input', () => { if (inp.classList.contains('error')) validate(inp); });
+            inp.addEventListener('input', () => {
+                form.querySelectorAll('.form-input').forEach(i => i.classList.remove('valid'));
+            });
         });
         form.addEventListener('submit', e => {
             e.preventDefault();
@@ -97,21 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* --- Newsletter Form --- */
-    const nlForm = document.getElementById('newsletter-form');
-    if (nlForm) {
-        nlForm.addEventListener('submit', e => {
-            e.preventDefault();
-            const input = nlForm.querySelector('.newsletter-input');
-            const btn = nlForm.querySelector('.btn');
-            if (input.value.trim()) {
-                btn.textContent = '✓ Eingetragen!';
-                btn.style.pointerEvents = 'none';
-                input.value = '';
-                setTimeout(() => { btn.textContent = 'Eintragen'; btn.style.pointerEvents = ''; }, 3000);
-            }
-        });
-    }
+
 
     /* --- Cookie Banner --- */
     const cookie = document.getElementById('cookie-banner');
