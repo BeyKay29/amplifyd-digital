@@ -7,6 +7,8 @@
     <title>Impressum — AMPLIFYD Digital</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="assets/images/logo.png?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .legal-content {
@@ -47,21 +49,39 @@
         <div class="sweep-line"></div>
         <div class="sweep-line"></div>
     </div>
-    <!-- NAV -->
+    <!-- ══ Navigation ══ -->
     <nav class="nav" aria-label="Hauptnavigation">
         <div class="container">
-            <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="" width="32"
-                    height="32">AMPLIFYD</a>
+            <a href="index.html" class="nav-logo" aria-label="AMPLIFYD Digital — Startseite">
+                <img src="assets/images/logo.png" alt="AMPLIFYD Digital Logo" width="30" height="30" loading="eager"
+                    fetchpriority="high">
+                AMPLIFYD
+            </a>
+
             <div class="nav-links">
-                <a href="leistungen.html">Leistungen</a><a href="projekte.html">Projekte</a><a
-                    href="insights.html">Insights</a><a href="index.html#kontakt">Kontakt</a>
+                <a href="leistungen.html">Leistungen</a>
+                <a href="projekte.html">Projekte</a>
+                <a href="insights.html">Insights</a>
+                <a href="index.html#kontakt">Kontakt</a>
+                <a href="leistungen.html" class="btn btn-primary nav-cta"
+                    style="padding: 10px 22px; font-size: 0.85rem;">
+                    Projekt starten
+                </a>
             </div>
-            <button class="nav-toggle" id="nav-toggle"
-                aria-label="Menü"><span></span><span></span><span></span></button>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"
+                aria-controls="nav-mobile">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="nav-mobile" id="nav-mobile"><a href="leistungen.html">Leistungen</a><a
-                href="projekte.html">Projekte</a><a href="insights.html">Insights</a><a
-                href="index.html#kontakt">Kontakt</a></div>
+
+        <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile Navigation" aria-modal="true">
+            <a href="leistungen.html">Leistungen</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="insights.html">Insights</a>
+            <a href="index.html#kontakt">Kontakt</a>
+            <a href="leistungen.html" class="btn btn-primary" style="margin-top: 8px;">Projekt starten</a>
+        </div>
     </nav>
 
     <main class="container">

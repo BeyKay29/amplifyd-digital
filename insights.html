@@ -4,38 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insights — Strategien für digitales Wachstum | AMPLIFYD Digital</title>
+
+    <!-- ══ SEO Meta-Tags ══ -->
+    <title>Insights & Blog — Online Marketing Tipps | AMPLIFYD Digital Mannheim</title>
     <meta name="description"
-        content="Praxisnahe Artikel zu Video-Marketing, Webdesign und Social Media. Strategien, die nachweislich funktionieren — von AMPLIFYD Digital.">
+        content="Praxiswissen für dein Online Marketing: Aktuelle Artikel zu Social Media, Webdesign und Videoproduktion vom AMPLIFYD-Team. Kostenlos lesen und umsetzen.">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="AMPLIFYD Digital">
     <link rel="canonical" href="https://amplifyd.digital/insights">
+
+    <!-- ══ Open Graph ══ -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Insights — Strategien für digitales Wachstum | AMPLIFYD Digital">
+    <meta property="og:url" content="https://amplifyd.digital/insights">
+    <meta property="og:title" content="Insights & Blog — AMPLIFYD Digital">
     <meta property="og:description"
-        content="Praxisnahe Artikel zu Video-Marketing, Webdesign und Social Media von AMPLIFYD Digital.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="assets/images/logo.png?v=2">
-    <link rel="stylesheet" href="styles.css">
+        content="Praxiswissen zu Social Media, Webdesign und Videoproduktion. Direkt umsetzbar, kostenlos.">
+    <meta property="og:image" content="https://amplifyd.digital/assets/images/og-insights.jpg">
+    <meta property="og:locale" content="de_DE">
+
+    <!-- ══ Strukturierte Daten ══ -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "AMPLIFYD Insights",
-    "description": "Praxisnahe Strategien für Video-Marketing, Webdesign und Social Media Marketing",
+    "description": "Praxiswissen zu Online Marketing, Social Media, Webdesign und Videoproduktion.",
     "url": "https://amplifyd.digital/insights",
     "publisher": {
       "@type": "Organization",
       "name": "AMPLIFYD Digital",
-      "logo": { "@type": "ImageObject", "url": "https://amplifyd.digital/assets/images/logo.png" }
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://amplifyd.digital/assets/images/logo.png"
+      }
     }
   }
   </script>
+
+    <!-- ══ Fonts (selbst gehostet, DSGVO-konform) ══ -->
+    <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- ========== BACKGROUND ANIMATION ========== -->
-    <div class="bg-animation">
+
+    <!-- Hintergrund-Animation -->
+    <div class="bg-animation" aria-hidden="true">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
@@ -47,345 +66,419 @@
         <div class="sweep-line"></div>
     </div>
 
-    <!-- NAV -->
+    <!-- ══ Navigation ══ -->
     <nav class="nav" aria-label="Hauptnavigation">
         <div class="container">
-            <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="AMPLIFYD Logo" width="32"
-                    height="32">AMPLIFYD</a>
+            <a href="index.html" class="nav-logo" aria-label="AMPLIFYD Digital — Startseite">
+                <img src="assets/images/logo.png" alt="AMPLIFYD Digital Logo" width="30" height="30" loading="eager"
+                    fetchpriority="high">
+                AMPLIFYD
+            </a>
+
             <div class="nav-links">
                 <a href="leistungen.html">Leistungen</a>
                 <a href="projekte.html">Projekte</a>
-                <a href="insights.html" style="color:var(--white);">Insights</a>
+                <a href="insights.html" aria-current="page" style="color: var(--white);">Insights</a>
                 <a href="index.html#kontakt">Kontakt</a>
+                <a href="leistungen.html" class="btn btn-primary nav-cta"
+                    style="padding: 10px 22px; font-size: 0.85rem;">
+                    Projekt starten
+                </a>
             </div>
-            <a href="index.html#kontakt" class="btn btn-secondary nav-cta"
-                style="padding:10px 22px;font-size:0.82rem;">Projekt starten</a>
-            <button class="nav-toggle" id="nav-toggle"
-                aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"
+                aria-controls="nav-mobile">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="nav-mobile" id="nav-mobile">
+
+        <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile Navigation" aria-modal="true">
             <a href="leistungen.html">Leistungen</a>
             <a href="projekte.html">Projekte</a>
             <a href="insights.html">Insights</a>
             <a href="index.html#kontakt">Kontakt</a>
+            <a href="leistungen.html" class="btn btn-primary" style="margin-top: 8px;">Projekt starten</a>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <header class="blog-hero">
+    <!-- ══ Blog Hero ══ -->
+    <section class="blog-hero" aria-labelledby="blog-heading">
         <div class="container">
-            <p class="section-eyebrow reveal">Insights & Strategien</p>
-            <h1 class="reveal reveal-d1">Wissen, das<br>Wachstum treibt.</h1>
-            <p class="section-desc reveal reveal-d2">Praxisnahe Analysen zu Video-Marketing, Webdesign und Social Media
-                — direkt aus unserer Arbeit mit über 30 Kunden.</p>
-
-            <!-- Category Filters -->
-            <div class="blog-filters reveal reveal-d3">
-                <button class="filter-btn active" data-filter="all">Alle</button>
-                <button class="filter-btn" data-filter="video">Video</button>
-                <button class="filter-btn" data-filter="webdesign">Webdesign</button>
-                <button class="filter-btn" data-filter="social-media">Social Media</button>
-                <button class="filter-btn" data-filter="strategie">Strategie</button>
-            </div>
+            <span class="section-eyebrow reveal">Insights & Blog</span>
+            <h1 id="blog-heading" class="reveal reveal-d1"
+                style="font-size: clamp(2.4rem, 5vw, 4rem); max-width: 700px;">
+                Wissen, das dich voranbringt.
+            </h1>
+            <p class="text-lg reveal reveal-d2" style="color: var(--gray-3); max-width: 560px; margin-top: var(--s5);">
+                Praxiswissen zu Social Media, Webdesign und Videoproduktion — direkt aus unserem Agenturalltag.
+                Kostenlos und ohne Fachchinesisch.
+            </p>
         </div>
-    </header>
+    </section>
 
-    <!-- ARTICLES GRID -->
-    <section style="padding-top:0;">
+    <!-- ══ Filter ══ -->
+    <div class="container" style="padding-bottom: var(--s5);">
+        <nav class="blog-filters reveal" aria-label="Kategorien filtern">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">Alle</button>
+            <button class="filter-btn" data-filter="social-media" aria-pressed="false">Social Media</button>
+            <button class="filter-btn" data-filter="webdesign" aria-pressed="false">Webdesign</button>
+            <button class="filter-btn" data-filter="video" aria-pressed="false">Videoproduktion</button>
+            <button class="filter-btn" data-filter="strategie" aria-pressed="false">Strategie</button>
+        </nav>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ══ Artikel-Grid ══ -->
+    <main style="padding: var(--s8) 0 var(--s11);" id="main-content">
         <div class="container">
             <div class="articles-grid">
 
-                <!-- FEATURED ARTICLE -->
-                <a href="artikel-video-marketing-strategie.html" class="article-card featured reveal"
-                    data-category="video">
-                    <div class="article-img-wrap">
-                        <img src="assets/images/blog/video-marketing.png"
-                            alt="Video-Marketing Strategie: Produktion im Studio" class="article-img" loading="lazy">
-                        <span class="article-category">Video-Marketing</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>20. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 8 Min. Lesezeit</span>
-                        </div>
-                        <h2 class="article-title">Warum 87% aller Werbevideos keine Ergebnisse liefern — und wie du es
-                            besser machst</h2>
-                        <p class="article-excerpt">Die meisten Unternehmen investieren tausende Euro in Videoproduktion
-                            und sehen keinen ROI. Der Grund: Sie behandeln Video wie ein kreatives Projekt, nicht wie
-                            ein strategisches Werkzeug. In diesem Artikel zeigen wir den Framework, der unseren Kunden
-                            durchschnittlich 3.2x ROI bringt.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Weiterlesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 2 -->
-                <a href="artikel-webdesign-trends-2026.html" class="article-card reveal reveal-d1"
-                    data-category="webdesign">
-                    <div class="article-img-wrap">
-                        <img src="assets/images/blog/webdesign-trends.png"
-                            alt="Webdesign Trends 2026: Futuristische UI-Elemente" class="article-img" loading="lazy">
-                        <span class="article-category">Webdesign</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>18. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 6 Min.</span>
-                        </div>
-                        <h3 class="article-title">Die 7 Webdesign-Trends 2026, die Conversion-Rates verdoppeln</h3>
-                        <p class="article-excerpt">Von Motion Design bis AI-Personalisierung: Diese Design-Trends
-                            trennen Marken, die wachsen, von solchen, die stagnieren.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Lesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 3 -->
-                <a href="artikel-social-media-roi.html" class="article-card reveal reveal-d2"
-                    data-category="social-media">
-                    <div class="article-img-wrap">
-                        <img src="assets/images/blog/social-media-roi.png"
-                            alt="Social Media ROI: Smartphone mit Analytics" class="article-img" loading="lazy">
-                        <span class="article-category">Social Media</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>14. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 7 Min.</span>
-                        </div>
-                        <h3 class="article-title">Social Media ROI messen: Der Framework für datengetriebene
-                            Entscheidungen</h3>
-                        <p class="article-excerpt">Likes sind keine KPIs. Wir zeigen dir, welche Metriken wirklich
-                            zählen und wie du den ROI deiner Social-Media-Aktivitäten beweist.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Lesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 4 -->
-                <a href="artikel-digitalagentur-beauftragen.html" class="article-card reveal reveal-d3"
-                    data-category="strategie">
-                    <div class="article-img-wrap">
-                        <div class="article-img-placeholder">📊</div>
-                        <span class="article-category">Strategie</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>10. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 6 Min.</span>
-                        </div>
-                        <h3 class="article-title">Digitalagentur beauftragen: 5 Fragen, die du stellen musst</h3>
-                        <p class="article-excerpt">Bevor du dein Budget investierst: Diese fünf Fragen entscheiden, ob
-                            du eine Agentur findest, die Ergebnisse liefert.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Lesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 5 -->
-                <a href="#" class="article-card reveal" data-category="video">
-                    <div class="article-img-wrap">
-                        <div class="article-img-placeholder">🎬</div>
-                        <span class="article-category">Video</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>5. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 4 Min.</span>
-                        </div>
-                        <h3 class="article-title">UGC vs. Professionelle Produktion: Was konvertiert besser?</h3>
-                        <p class="article-excerpt">Wir haben 120+ Kampagnen analysiert. Das Ergebnis überrascht — und
-                            zeigt, wann welches Format den höchsten ROI bringt.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Lesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 6 -->
-                <a href="#" class="article-card reveal reveal-d1" data-category="webdesign">
-                    <div class="article-img-wrap">
-                        <div class="article-img-placeholder">⚡</div>
-                        <span class="article-category">Webdesign</span>
-                    </div>
-                    <div class="article-body">
-                        <div class="article-meta">
-                            <span>1. Feb 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 6 Min.</span>
-                        </div>
-                        <h3 class="article-title">Core Web Vitals 2026: So beeinflusst Ladezeit dein Google-Ranking</h3>
-                        <p class="article-excerpt">Seiten, die in unter 2 Sekunden laden, ranken im Schnitt 37% besser.
-                            Unser technischer Leitfaden für maximale Performance.</p>
-                        <div class="article-footer">
-                            <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
-                                <span class="article-author-name">AMPLIFYD Team</span>
-                            </div>
-                            <span class="article-read-more">Lesen →</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- ARTICLE 7 -->
-                <a href="#" class="article-card reveal reveal-d2" data-category="social-media">
+                <!-- Featured Artikel -->
+                <article class="article-card featured reveal" data-category="social-media">
                     <div class="article-img-wrap">
                         <div class="article-img-placeholder">📱</div>
                         <span class="article-category">Social Media</span>
                     </div>
                     <div class="article-body">
                         <div class="article-meta">
-                            <span>28. Jan 2026</span>
-                            <span class="article-meta-dot"></span>
-                            <span class="article-reading-time">📖 5 Min.</span>
+                            <time datetime="2026-02-18">18. Feb 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>8 Min. Lesezeit</span>
                         </div>
-                        <h3 class="article-title">TikTok für B2B: Warum auch Industrieunternehmen die Plattform nutzen
-                            sollten</h3>
-                        <p class="article-excerpt">TikTok ist längst nicht mehr nur für Gen Z. Wie B2B-Marken auf der
-                            Plattform qualifizierte Leads generieren.</p>
+                        <h2 class="article-title">
+                            Der vollständige Guide: Instagram Reels im Jahr 2026 — was wirklich noch funktioniert
+                        </h2>
+                        <p class="article-excerpt">
+                            Der Algorithmus hat sich verändert, die Nutzer haben sich verändert — aber die
+                            Grundprinzipien
+                            viraler Reichweite bleiben dieselben. Wir zeigen dir, welche Taktiken 2026 noch
+                            funktionieren
+                            und welche du sofort streichen solltest.
+                        </p>
                         <div class="article-footer">
                             <div class="article-author">
-                                <div class="article-author-avatar">AD</div>
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
                                 <span class="article-author-name">AMPLIFYD Team</span>
                             </div>
-                            <span class="article-read-more">Lesen →</span>
+                            <span class="article-read-more" aria-label="Artikel lesen: Instagram Reels Guide 2026">
+                                Lesen →
+                            </span>
                         </div>
                     </div>
-                </a>
+                </article>
 
-            </div><!-- /articles-grid -->
+                <!-- Artikel 2 -->
+                <article class="article-card reveal reveal-d1" data-category="webdesign">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">🎨</div>
+                        <span class="article-category">Webdesign</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-02-12">12. Feb 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>6 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            5 Webdesign-Fehler, die deine Conversion-Rate heimlich sabotieren
+                        </h2>
+                        <p class="article-excerpt">
+                            Die meisten Websites verlieren 60–80 % ihrer potenziellen Kunden durch dieselben
+                            fünf Fehler. Wir zeigen dir genau, wie du sie erkennst — und in einem Nachmittag behebst.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: Webdesign-Fehler">Lesen →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 3 -->
+                <article class="article-card reveal reveal-d2" data-category="video">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">🎬</div>
+                        <span class="article-category">Videoproduktion</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-02-05">5. Feb 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>5 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Hook in 3 Sekunden: So entstehen Werbevideos, die wirklich konvertieren
+                        </h2>
+                        <p class="article-excerpt">
+                            Werbeanzeigen werden übersprungen — außer die ersten drei Sekunden packen den Zuschauer.
+                            Das ist keine Magie, sondern Methode. Wir erklären das Framework hinter jedem unserer
+                            Videos.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: Hook in 3 Sekunden">Lesen
+                                →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 4 -->
+                <article class="article-card reveal reveal-d3" data-category="strategie">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">📊</div>
+                        <span class="article-category">Strategie</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-01-28">28. Jan 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>7 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            ROI statt Likes: Wie du Social Media Erfolg wirklich misst
+                        </h2>
+                        <p class="article-excerpt">
+                            Follower und Likes sind nette Zahlen — aber kein Geschäft. Wir zeigen dir, welche
+                            KPIs tatsächlich zählen und wie du einen Report aufbaust, der Entscheidungen ermöglicht.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: ROI messen">Lesen →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 5 -->
+                <article class="article-card reveal" data-category="social-media">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">🚀</div>
+                        <span class="article-category">Social Media</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-01-21">21. Jan 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>4 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            TikTok für B2B: Warum deine Zielgruppe dort bereits ist
+                        </h2>
+                        <p class="article-excerpt">
+                            TikTok ist nicht mehr nur für Teenager. Entscheidungsträger, Gründer und Fachkräfte
+                            scrollen täglich durch den Feed — und du kannst sie dort erreichen.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: TikTok für B2B">Lesen →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 6 -->
+                <article class="article-card reveal reveal-d1" data-category="webdesign">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">⚡</div>
+                        <span class="article-category">Webdesign</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-01-14">14. Jan 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>6 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Core Web Vitals 2026: Was Ladezeit wirklich mit deinem Umsatz macht
+                        </h2>
+                        <p class="article-excerpt">
+                            Jede Sekunde, die deine Website länger lädt, kostet dich Kunden. Google-Daten
+                            zeigen: 53 % der Nutzer verlassen eine Seite nach mehr als drei Sekunden Ladezeit.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: Core Web Vitals">Lesen →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 7 -->
+                <article class="article-card reveal reveal-d2" data-category="video">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">🎥</div>
+                        <span class="article-category">Videoproduktion</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2026-01-07">7. Jan 2026</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>5 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Smartphone vs. Kamera: Wann welches Equipment für deine Werbung sinnvoll ist
+                        </h2>
+                        <p class="article-excerpt">
+                            Nicht jedes Video braucht eine DSLR. Und nicht jedes Smartphone-Video wirkt unprofessionell.
+                            Wir erklären, wann welches Equipment die richtige Wahl ist.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: Smartphone vs Kamera">Lesen
+                                →</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artikel 8 -->
+                <article class="article-card reveal reveal-d3" data-category="strategie">
+                    <div class="article-img-wrap">
+                        <div class="article-img-placeholder">💡</div>
+                        <span class="article-category">Strategie</span>
+                    </div>
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <time datetime="2025-12-20">20. Dez 2025</time>
+                            <span class="article-meta-dot" aria-hidden="true"></span>
+                            <span>9 Min. Lesezeit</span>
+                        </div>
+                        <h2 class="article-title">
+                            Content-Strategie 2026: Wie du mit weniger Content mehr erreichst
+                        </h2>
+                        <p class="article-excerpt">
+                            Mehr posten ist nicht besser posten. Wir zeigen dir, wie du mit einem klaren
+                            Content-System weniger Zeit investierst und mehr Reichweite erzielst.
+                        </p>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar" aria-hidden="true">AD</div>
+                                <span class="article-author-name">AMPLIFYD Team</span>
+                            </div>
+                            <span class="article-read-more" aria-label="Artikel lesen: Content-Strategie 2026">Lesen
+                                →</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </div>
-    </section>
+    </main>
 
-    <hr class="section-divider">
-
-    <!-- CTA -->
-    <section class="text-center" style="padding:var(--s10) 0;">
+    <!-- ══ Newsletter CTA ══ -->
+    <section style="padding: var(--s9) 0;" aria-labelledby="newsletter-heading">
         <div class="container">
-            <p class="section-eyebrow reveal">Bereit loszulegen?</p>
-            <h2 class="reveal reveal-d1" style="margin-bottom:var(--s5);">Lass uns über dein<br>nächstes Projekt
-                sprechen.</h2>
-            <a href="index.html#kontakt" class="btn btn-primary reveal reveal-d2">Kostenlose Erstberatung →</a>
+            <div class="card reveal"
+                style="max-width: 680px; margin: 0 auto; text-align: center; padding: var(--s9) var(--s8);">
+                <span class="section-eyebrow" style="margin-bottom: var(--s3);">Newsletter</span>
+                <h2 id="newsletter-heading" style="font-size: clamp(1.7rem, 3vw, 2.4rem); margin-bottom: var(--s4);">
+                    Neue Artikel direkt ins Postfach.
+                </h2>
+                <p style="color: var(--gray-3); margin-bottom: var(--s6); font-size: 1rem;">
+                    Kein Spam, keine wöchentlichen Massen-Mails. Nur neue Artikel — wenn sie wirklich gut sind.
+                </p>
+                <form class="newsletter-form" aria-label="Newsletter anmelden" style="max-width: 440px; margin: 0 auto;"
+                    novalidate>
+                    <label for="newsletter-email" class="sr-only">E-Mail-Adresse</label>
+                    <input type="email" id="newsletter-email" name="email" class="newsletter-input"
+                        placeholder="deine@email.de" required autocomplete="email" maxlength="200">
+                    <button type="submit" class="btn btn-primary">Anmelden</button>
+                </form>
+                <p class="text-sm" style="color: var(--gray-2); margin-top: var(--s4);">
+                    Jederzeit mit einem Klick abmeldbar. ·
+                    <a href="datenschutz.html" style="color: var(--gray-3); text-decoration: underline;">Datenschutz</a>
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ══ Footer ══ -->
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
+
                 <div class="footer-brand">
-                    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="" width="32"
-                            height="32">AMPLIFYD</a>
-                    <p>Premium Digitalagentur für Marken, die nicht mitspielen — sondern dominieren.</p>
+                    <a href="/" class="nav-logo" aria-label="AMPLIFYD Digital — Startseite">
+                        <img src="/assets/images/logo.png" alt="AMPLIFYD Digital" width="30" height="30" loading="lazy">
+                        AMPLIFYD
+                    </a>
+                    <p>Premium Digitalagentur für Marken, die dominieren wollen. Aus Mannheim, deutschlandweit tätig.
+                    </p>
                 </div>
-                <div>
-                    <h5>Leistungen</h5>
+
+                <nav aria-label="Leistungen">
+                    <span class="footer-heading">Leistungen</span>
                     <ul>
-                        <li><a href="leistungen.html">Werbevideos</a></li>
-                        <li><a href="leistungen.html">Webdesign</a></li>
-                        <li><a href="leistungen.html">Social Media</a></li>
+                        <li><a href="leistungen.html#videos">Werbevideos</a></li>
+                        <li><a href="leistungen.html#webdesign">Webdesign</a></li>
+                        <li><a href="leistungen.html#social">Social Media</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h5>Agentur</h5>
+                </nav>
+
+                <nav aria-label="Agentur">
+                    <span class="footer-heading">Agentur</span>
                     <ul>
                         <li><a href="projekte.html">Projekte</a></li>
                         <li><a href="insights.html">Insights</a></li>
                         <li><a href="index.html#kontakt">Kontakt</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h5>Rechtliches</h5>
+                </nav>
+
+                <nav aria-label="Rechtliches">
+                    <span class="footer-heading">Rechtliches</span>
                     <ul>
                         <li><a href="impressum.html">Impressum</a></li>
                         <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
-                </div>
+                </nav>
+
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 AMPLIFYD Digital. Alle Rechte vorbehalten.</p>
-                <p style="display:flex;gap:20px;"><a href="https://instagram.com" target="_blank"
-                        rel="noopener">Instagram</a><a href="https://linkedin.com" target="_blank"
-                        rel="noopener">LinkedIn</a><a href="https://tiktok.com" target="_blank"
-                        rel="noopener">TikTok</a></p>
+                <p style="display: flex; gap: 20px;">
+                    <a href="https://instagram.com/amplifyd.digital" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">Instagram</a>
+                    <a href="https://linkedin.com/company/amplifyd-digital" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://tiktok.com/@amplifyd.digital" target="_blank" rel="noopener noreferrer"
+                        aria-label="TikTok">TikTok</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- COOKIE BANNER -->
-    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen">
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen" aria-live="polite">
         <div class="container">
             <div class="cookie-inner">
-                <p class="cookie-text">Wir verwenden Cookies, um dir die beste Erfahrung zu bieten. <a
-                        href="datenschutz.html">Mehr erfahren</a></p>
+                <p class="cookie-text">
+                    Wir verwenden ausschließlich technisch notwendige Cookies.
+                    <a href="datenschutz.html">Mehr erfahren</a>
+                </p>
                 <div class="cookie-actions">
-                    <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Akzeptieren</button>
                     <button class="cookie-btn cookie-btn-decline" id="cookie-decline">Ablehnen</button>
+                    <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Verstanden</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="app.js" defer></script>
-    <script>
-        /* Blog Filter Logic */
-        document.addEventListener('DOMContentLoaded', () => {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const articles = document.querySelectorAll('.article-card');
-
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    const filter = btn.dataset.filter;
-
-                    articles.forEach(card => {
-                        if (filter === 'all' || card.dataset.category === filter) {
-                            card.style.display = '';
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(16px)';
-                            requestAnimationFrame(() => {
-                                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                                card.style.opacity = '1';
-                                card.style.transform = 'translateY(0)';
-                            });
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
