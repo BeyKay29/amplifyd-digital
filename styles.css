@@ -307,7 +307,7 @@ section {
 
 .btn-primary {
     background: var(--white);
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .btn-primary:hover {
