@@ -1,0 +1,15 @@
+{
+  "name": "amplifyd-digital",
+  "version": "1.0.0",
+  "description": "AMPLIFYD Digital Website",
+  "main": "app.js",
+  "dependencies": {
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
