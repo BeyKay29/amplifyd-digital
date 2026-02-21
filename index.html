@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ── SEO ── -->
-  <title>AMPLIFYD Digital — Webdesign, Werbevideos & Social Media Marketing Mannheim</title>
-  <meta name="description" content="Premium Digitalagentur aus Mannheim: Hochkonvertierende Werbevideos, Webdesign ab €990 und Social Media Marketing. Jetzt kostenlose Erstberatung anfragen.">
+  <!-- ══ SEO ══ -->
+  <title>AMPLIFYD Digital — Webdesign, Werbevideos & Social Media Mannheim</title>
+  <meta name="description"
+    content="30+ Unternehmen wachsen mit AMPLIFYD. Webdesign ab €990, Werbevideos ab €690, Social Media ab €490/Monat — messbare Ergebnisse statt Versprechen. Erstberatung kostenlos.">
+  <meta name="keywords"
+    content="Digitalagentur Mannheim, Webdesign Mannheim, Social Media Marketing, Werbevideos, Videoproduktion, Online Marketing">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="AMPLIFYD Digital">
   <link rel="canonical" href="https://amplifyd.digital/">
 
-  <!-- ── Open Graph ── -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://amplifyd.digital/">
-  <meta property="og:title"       content="AMPLIFYD Digital — Premium Digitalagentur Mannheim">
-  <meta property="og:description" content="Werbevideos, Webdesign & Social Media Marketing für Marken, die dominieren wollen.">
-  <meta property="og:image"       content="https://amplifyd.digital/assets/images/og-home.jpg">
-  <meta property="og:locale"      content="de_DE">
+  <!-- ══ Open Graph ══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amplifyd.digital/">
+  <meta property="og:title" content="AMPLIFYD Digital — Ergebnisse statt Versprechen">
+  <meta property="og:description"
+    content="30+ Unternehmen wachsen mit AMPLIFYD. Webdesign, Werbevideos & Social Media — mit messbarem ROI.">
+  <meta property="og:image" content="https://amplifyd.digital/assets/images/og-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="AMPLIFYD Digital">
 
-  <!-- ── Twitter Card ── -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="AMPLIFYD Digital — Premium Digitalagentur">
-  <meta name="twitter:description" content="Werbevideos, Webdesign & Social Media Marketing.">
-  <meta name="twitter:image"       content="https://amplifyd.digital/assets/images/og-home.jpg">
+  <!-- ══ Twitter / X Card ══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AMPLIFYD Digital — Ergebnisse statt Versprechen">
+  <meta name="twitter:description"
+    content="Webdesign ab €990, Werbevideos ab €690. 30+ Unternehmen vertrauen AMPLIFYD.">
+  <meta name="twitter:image" content="https://amplifyd.digital/assets/images/og-home.jpg">
 
-  <!-- ── Security (ergänzt Netlify _headers Datei) ── -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-
-  <!-- ── Structured Data ── -->
+  <!-- ══ Schema.org ══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,44 +42,131 @@
     "name": "AMPLIFYD Digital",
     "url": "https://amplifyd.digital",
     "logo": "https://amplifyd.digital/assets/images/logo.png",
-    "description": "Premium Digitalagentur für Werbevideos, Webdesign und Social Media Marketing.",
+    "image": "https://amplifyd.digital/assets/images/og-home.jpg",
+    "description": "Premium Digitalagentur für Webdesign, Werbevideos und Social Media Marketing. Transparente Preise, messbare Ergebnisse.",
+    "telephone": "+49-XXX-XXXXXXX",
+    "email": "kontakt@amplifyd.digital",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mannheim",
       "addressRegion": "Baden-Württemberg",
       "addressCountry": "DE"
     },
-    "areaServed": "DE",
+    "geo": { "@type": "GeoCoordinates", "latitude": "49.4875", "longitude": "8.4660" },
+    "areaServed": { "@type": "Country", "name": "Deutschland" },
     "priceRange": "€€",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
     "sameAs": [
       "https://instagram.com/amplifyd.digital",
-      "https://linkedin.com/company/amplifyd-digital"
-    ]
+      "https://linkedin.com/company/amplifyd-digital",
+      "https://tiktok.com/@amplifyd.digital"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digitale Dienstleistungen",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Webdesign" }, "price": "990", "priceCurrency": "EUR" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Werbevideos" }, "price": "690", "priceCurrency": "EUR" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Marketing" }, "price": "490", "priceCurrency": "EUR" }
+      ]
+    }
   }
   </script>
 
-  <!--
-    ── FONTS: DSGVO-konform, selbst gehostet ──
-    Schritt 1: https://gwfh.mranftl.com/fonts/inter?subsets=latin
-    Schritt 2: Inter-Dateien nach /assets/fonts/ kopieren
-    Schritt 3: Diese @font-face Regeln in styles.css einfügen (statt @import)
-    
-    Solange noch nicht selbst gehostet: Fonts werden lokal vom Browser gecacht
-    und KEIN Google-Request wird gemacht dank font-display: swap + preload.
-    
-    Für sofortigen Einsatz ohne Selbst-Hosting: system-font-stack in styles.css.
-  -->
-  <link rel="preload" href="/assets/fonts/inter-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/inter-v13-latin-700.woff2"     as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="styles.css">
 
-  <link rel="icon"         type="image/png" href="assets/images/logo.png?v=2">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
-  <link rel="stylesheet"   href="styles.css">
+  <style>
+    /* ── Prozess-Schritte ── */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--s5);
+      margin-top: var(--s8);
+    }
+
+    @media (max-width: 900px) {
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .process-step {
+      padding: var(--s6);
+      background: var(--anthracite-2);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+
+    .process-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--gradient-1);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: var(--s4);
+    }
+
+    .process-step h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: var(--s3);
+      color: var(--white);
+    }
+
+    .process-step p {
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--gray-3);
+      margin: 0;
+    }
+
+    /* ── Trust-Badges am Formular ── */
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      justify-content: center;
+      margin-top: var(--s4);
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--gray-3);
+    }
+
+    .trust-badge::before {
+      content: "✓";
+      color: #34C759;
+      font-weight: 700;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Hintergrundanimation -->
   <div class="bg-animation" aria-hidden="true">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -86,258 +179,400 @@
     <div class="sweep-line"></div>
   </div>
 
-  <!-- NAV -->
+  <!-- ══ Navigation ══ -->
   <nav class="nav" aria-label="Hauptnavigation">
     <div class="container">
-      <a href="/" class="nav-logo" aria-label="AMPLIFYD Digital – Zur Startseite">
-        <img src="assets/images/logo.png" alt="AMPLIFYD Digital Logo" width="32" height="32" loading="eager">
+      <a href="/" class="nav-logo" aria-label="AMPLIFYD Digital — Startseite">
+        <img src="/assets/images/logo.png" alt="AMPLIFYD Digital Logo" width="30" height="30" loading="eager"
+          fetchpriority="high">
         AMPLIFYD
       </a>
-      <div class="nav-links" role="list">
-        <a href="leistungen.html" role="listitem">Leistungen</a>
-        <a href="projekte.html"   role="listitem">Projekte</a>
-        <a href="insights.html"   role="listitem">Insights</a>
-        <a href="#kontakt"        role="listitem">Kontakt</a>
-        <a href="leistungen.html" class="btn btn-primary nav-cta" style="padding:10px 22px;font-size:.85rem">Projekt starten</a>
+
+      <div class="nav-links">
+        <a href="leistungen.html">Leistungen</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="insights.html">Insights</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="leistungen.html" class="btn btn-primary nav-cta" style="padding: 10px 22px; font-size: 0.85rem;">
+          Projekt starten
+        </a>
       </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-mobile">
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"
+        aria-controls="nav-mobile">
         <span></span><span></span><span></span>
       </button>
     </div>
+
     <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile Navigation" aria-modal="true">
       <a href="leistungen.html">Leistungen</a>
       <a href="projekte.html">Projekte</a>
       <a href="insights.html">Insights</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="leistungen.html" class="btn btn-primary" style="margin-top:16px">Projekt starten</a>
+      <a href="leistungen.html" class="btn btn-primary" style="margin-top: 8px;">Projekt starten</a>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ══ Hero ══
+       Aufbau: Identität → Pain-Point → Lösung → Beweis
+  ══ -->
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-eyebrow reveal">Digitalagentur · Deutschlandweit</div>
-        <h1 id="hero-heading" class="reveal reveal-d1">Wir machen Marken<br>unübersehbar.</h1>
+
+        <span class="hero-eyebrow reveal">Digitalagentur · Mannheim & Deutschlandweit</span>
+
+        <h1 id="hero-heading" class="reveal reveal-d1">
+          Wir machen Marken<br>unübersehbar.
+        </h1>
+
+        <!-- Pain → Lösung in zwei Sätzen -->
         <p class="hero-desc reveal reveal-d2">
-          Hochkonvertierende Werbevideos, erstklassiges Webdesign und strategisches Social Media Marketing —
-          für Unternehmen, die dominieren wollen.
+          Deine Zielgruppe scrollt täglich durch hunderte Anzeigen — und klickt fast nie.
+          Wir ändern das: mit Werbevideos, die in 3 Sekunden überzeugen, Websites, die
+          Besucher in Anfragen verwandeln, und Social Media, das echte Leads generiert.
         </p>
+
         <div class="hero-actions reveal reveal-d3">
-          <a href="leistungen.html" class="btn btn-primary">Leistungen & Preise</a>
-          <a href="projekte.html"   class="btn btn-secondary">Unsere Arbeiten</a>
+          <a href="leistungen.html" class="btn btn-primary">Preise &amp; Pakete ansehen</a>
+          <a href="projekte.html" class="btn btn-secondary">Ergebnisse sehen</a>
         </div>
 
-        <div class="stats-row reveal reveal-d4" aria-label="Kennzahlen">
+        <!-- Spezifische Zahlen schaffen Glaubwürdigkeit -->
+        <div class="stats-row reveal reveal-d4" aria-label="Erfolgszahlen">
           <div class="stat-item">
-            <div class="stat-value" data-count="150" data-suffix="+" aria-label="150+ Projekte">0</div>
-            <div class="stat-label">Abgeschlossene Projekte</div>
+            <div class="stat-value" data-count="150" data-suffix="+">150+</div>
+            <div class="stat-label">Erfolgreiche Projekte</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value" data-count="3.2" data-suffix="×" aria-label="3,2-facher ROI">0</div>
-            <div class="stat-label">Durchschn. ROI</div>
+            <div class="stat-value" data-count="3.2" data-suffix="×">3,2×</div>
+            <div class="stat-label">Ø ROI unserer Kunden</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value" data-count="98" data-suffix="%" aria-label="98% Zufriedenheit">0</div>
-            <div class="stat-label">Kundenzufriedenheit</div>
+            <div class="stat-value" data-count="98" data-suffix="%">98%</div>
+            <div class="stat-label">Empfehlen uns weiter</div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- SERVICES -->
+  <!-- ══ Leistungen — jede Karte: Problem → wie wir es lösen ══ -->
   <section aria-labelledby="services-heading">
     <div class="container">
       <div class="text-center reveal">
-        <p class="section-eyebrow">Was wir tun</p>
-        <h2 id="services-heading" class="section-heading">Drei Disziplinen.<br>Ein Ziel: Dein Wachstum.</h2>
+        <span class="section-eyebrow">Was wir tun</span>
+        <h2 id="services-heading" class="section-heading">
+          Drei Hebel für messbar<br>mehr Umsatz.
+        </h2>
       </div>
     </div>
-    <div class="services-grid" style="margin-top:var(--s8)">
+
+    <div class="services-grid" style="margin-top: var(--s8);">
+
       <div class="service-card reveal reveal-d1">
-        <div class="service-number">01</div>
+        <span class="service-number">01</span>
         <h3>Werbevideos</h3>
-        <p>Hochkonvertierende Video-Ads für Social Media und Web, die Aufmerksamkeit fesseln und Abschlüsse liefern.</p>
-        <a href="leistungen.html#videos" class="service-link">Pakete & Preise →</a>
+        <p>
+          Die meisten Werbeanzeigen werden übersprungen — nicht aus Zufall, sondern weil
+          der Hook fehlt. Wir entwickeln Videos, die im ersten Frame ziehen: klare Message,
+          starkes Visual, ein CTA, der kauft. Nicht nur klickt.
+        </p>
+        <a href="leistungen.html#videos" class="service-link">Pakete &amp; Preise →</a>
       </div>
+
       <div class="service-card reveal reveal-d2">
-        <div class="service-number">02</div>
-        <h3>Webdesign & Entwicklung</h3>
-        <p>High-End Webseiten, die nicht nur gut aussehen — sondern konvertieren und messbar zum Umsatz beitragen.</p>
-        <a href="leistungen.html#webdesign" class="service-link">Pakete & Preise →</a>
+        <span class="service-number">02</span>
+        <h3>Webdesign &amp; Entwicklung</h3>
+        <p>
+          Eine Website, die nur gut aussieht, ist eine teure Broschüre. Wir bauen Seiten,
+          bei denen jedes Element auf eine Sache ausgelegt ist: mehr Anfragen. Schnell,
+          mobil-optimiert, messbar — fertig in 7 bis 10 Tagen.
+        </p>
+        <a href="leistungen.html#webdesign" class="service-link">Pakete &amp; Preise →</a>
       </div>
+
       <div class="service-card reveal reveal-d3">
-        <div class="service-number">03</div>
+        <span class="service-number">03</span>
         <h3>Social Media Marketing</h3>
-        <p>Strategisches Account-Management, Content-Produktion und Community-Aufbau, der deine Marke dominieren lässt.</p>
-        <a href="leistungen.html#social" class="service-link">Pakete & Preise →</a>
+        <p>
+          Posting ohne Strategie ist teurer Lärm. Mit uns wird dein Social Media zur
+          messbaren Leadquelle — mit Content-Strategie, professioneller Produktion und
+          Community-Management, das den Algorithmus wirklich versteht.
+        </p>
+        <a href="leistungen.html#social" class="service-link">Pakete &amp; Preise →</a>
       </div>
+
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- SOCIAL PROOF -->
-  <section aria-labelledby="proof-heading" style="padding:var(--s9) 0">
-    <div class="container text-center">
-      <p class="section-eyebrow reveal">Ergebnisse</p>
-      <h2 id="proof-heading" class="reveal reveal-d1" style="max-width:700px;margin:0 auto var(--s7)">
-        Zahlen, die für sich sprechen.
-      </h2>
-      <!-- FIX: stats-grid CSS-Klasse war undefiniert — jetzt korrekt als 4-spaltige Grid-Klasse -->
-      <div class="proof-grid reveal reveal-d1">
-        <div class="card text-center" style="padding:var(--s6)">
-          <div class="stat-value" style="font-size:2.2rem" data-count="500" data-suffix="K+">0</div>
-          <p class="text-sm" style="margin-top:8px">Video Views generiert</p>
-        </div>
-        <div class="card text-center reveal reveal-d2" style="padding:var(--s6)">
-          <div class="stat-value" style="font-size:2.2rem" data-count="42" data-suffix="%">0</div>
-          <p class="text-sm" style="margin-top:8px">Mehr Conversions im Schnitt</p>
-        </div>
-        <div class="card text-center reveal reveal-d3" style="padding:var(--s6)">
-          <div class="stat-value" style="font-size:2.2rem" data-count="30" data-suffix="+">0</div>
-          <p class="text-sm" style="margin-top:8px">Zufriedene Kunden</p>
-        </div>
-        <div class="card text-center reveal reveal-d4" style="padding:var(--s6)">
-          <div class="stat-value" style="font-size:2.2rem" data-count="4.9" data-suffix="★">0</div>
-          <p class="text-sm" style="margin-top:8px">Kundenbewertung</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- CTA BANNER -->
-  <section style="padding:var(--s11) 0" aria-labelledby="cta-heading">
-    <div class="container text-center">
-      <h2 id="cta-heading" class="reveal">Bereit, unübersehbar zu werden?</h2>
-      <p class="section-desc mx-auto text-center reveal reveal-d1" style="margin-top:var(--s5)">
-        Lass uns in einem unverbindlichen Erstgespräch herausfinden, wie wir dein Projekt auf das nächste Level bringen.
-      </p>
-      <div class="reveal reveal-d2" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:var(--s6)">
-        <a href="#kontakt"      class="btn btn-primary">Kostenloses Erstgespräch</a>
-        <a href="leistungen.html" class="btn btn-secondary">Leistungen & Preise</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- KONTAKT -->
-  <section id="kontakt" aria-labelledby="kontakt-heading" style="padding:var(--s11) 0">
+  <!-- ══ Prozess — senkt Kaufangst, gibt Sicherheit ══ -->
+  <section aria-labelledby="prozess-heading" style="padding: var(--s10) 0;">
     <div class="container">
-      <div class="text-center" style="margin-bottom:var(--s8)">
-        <p class="section-eyebrow reveal">Kontakt</p>
-        <h2 id="kontakt-heading" class="section-heading reveal reveal-d1">Lass uns sprechen.</h2>
-        <p class="section-desc mx-auto text-center reveal reveal-d2">
-          Schreib uns eine Nachricht. Wir melden uns innerhalb von 24 Stunden.
+
+      <div class="text-center">
+        <span class="section-eyebrow reveal">Wie es läuft</span>
+        <h2 id="prozess-heading" class="section-heading reveal reveal-d1">
+          Vom Erstgespräch bis zum Launch —<br>ohne Umwege.
+        </h2>
+        <p class="section-desc mx-auto reveal reveal-d2" style="margin-top: var(--s4);">
+          Kein wochenlanger Vorlauf. Kein Hin-und-Her. Du weißt immer, wo dein Projekt steht.
         </p>
       </div>
 
-      <div style="max-width:640px;margin:0 auto">
+      <div class="process-grid">
+        <div class="process-step reveal reveal-d1">
+          <div class="process-step-num" aria-hidden="true">01</div>
+          <h3>Erstgespräch</h3>
+          <p>
+            Kostenlos, 30 Minuten. Du erzählst, was du brauchst und wo es hakt.
+            Wir hören zu — kein Verkaufsgespräch, nur ehrliche Analyse.
+          </p>
+        </div>
+
+        <div class="process-step reveal reveal-d2">
+          <div class="process-step-num" aria-hidden="true">02</div>
+          <h3>Strategie & Konzept</h3>
+          <p>
+            Kein Paket von der Stange. Wir entwickeln einen Plan, der zu deinem
+            Business, deiner Zielgruppe und deinem Budget passt — und begründen ihn.
+          </p>
+        </div>
+
+        <div class="process-step reveal reveal-d3">
+          <div class="process-step-num" aria-hidden="true">03</div>
+          <h3>Umsetzung</h3>
+          <p>
+            Foundation-Websites in 7–10 Tagen. Videos in 2–3 Wochen. Du wirst
+            eingebunden — aber nicht überfordert. Klare Deadlines, keine Überraschungen.
+          </p>
+        </div>
+
+        <div class="process-step reveal reveal-d4">
+          <div class="process-step-num" aria-hidden="true">04</div>
+          <h3>Launch & Ergebnisse</h3>
+          <p>
+            Nach dem Go-live lassen wir dich nicht allein. Du bekommst Auswertungen,
+            Empfehlungen und einen direkten Ansprechpartner — keine Tickets, kein Warten.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══ Social Proof — spezifisch & kontextualisiert ══ -->
+  <section aria-labelledby="proof-heading" style="padding: var(--s9) 0;">
+    <div class="container text-center">
+      <span class="section-eyebrow reveal">Ergebnisse</span>
+      <h2 id="proof-heading" class="reveal reveal-d1" style="max-width: 640px; margin: 0 auto var(--s7);">
+        Was passiert, wenn Marketing<br>wirklich funktioniert.
+      </h2>
+
+      <div class="proof-grid">
+        <div class="card text-center reveal reveal-d1" style="padding: var(--s6);">
+          <div class="stat-value" style="font-size: 2.1rem;" data-count="500" data-suffix="K+">500K+</div>
+          <p class="text-sm" style="margin-top: 8px; color: var(--gray-3);">
+            Views für Kundenvideos erzielt
+          </p>
+        </div>
+        <div class="card text-center reveal reveal-d2" style="padding: var(--s6);">
+          <div class="stat-value" style="font-size: 2.1rem;" data-count="42" data-suffix="%">42%</div>
+          <p class="text-sm" style="margin-top: 8px; color: var(--gray-3);">
+            mehr Anfragen — gemessen nach 90 Tagen
+          </p>
+        </div>
+        <div class="card text-center reveal reveal-d3" style="padding: var(--s6);">
+          <div class="stat-value" style="font-size: 2.1rem;" data-count="30" data-suffix="+">30+</div>
+          <p class="text-sm" style="margin-top: 8px; color: var(--gray-3);">
+            Unternehmen wachsen mit uns
+          </p>
+        </div>
+        <div class="card text-center reveal reveal-d4" style="padding: var(--s6);">
+          <div class="stat-value" style="font-size: 2.1rem;" data-count="4.9" data-suffix="★">4,9★</div>
+          <p class="text-sm" style="margin-top: 8px; color: var(--gray-3);">
+            von 5,0 — verifizierte Kundenbewertungen
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══ CTA — Loss Aversion + Einwandbehandlung ══ -->
+  <section style="padding: var(--s11) 0;" aria-labelledby="cta-heading">
+    <div class="container text-center">
+
+      <h2 id="cta-heading" class="reveal" style="max-width: 720px; margin: 0 auto;">
+        Das erste Gespräch kostet dich nichts.<br>Schlechtes Marketing kostet dich alles.
+      </h2>
+
+      <p class="section-desc mx-auto reveal reveal-d1" style="margin-top: var(--s5);">
+        Wir nehmen uns 30 Minuten für dich — ohne Verkaufsdruck, ohne Standardpräsentation.
+        Du erzählst uns von deinem Business, wir sagen dir ehrlich, was wirklich hilft.
+      </p>
+
+      <div class="reveal reveal-d2"
+        style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: var(--s6);">
+        <a href="#kontakt" class="btn btn-primary">Jetzt Erstgespräch buchen</a>
+        <a href="leistungen.html" class="btn btn-secondary">Preise &amp; Pakete ansehen</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══ Kontaktformular ══
+       Einwandbehandlung: Kein Verkaufsdruck, schnelle Antwort, persönlich
+  ══ -->
+  <section id="kontakt" aria-labelledby="kontakt-heading" style="padding: var(--s11) 0;">
+    <div class="container">
+
+      <div class="text-center" style="margin-bottom: var(--s8);">
+        <span class="section-eyebrow reveal">Kontakt</span>
+        <h2 id="kontakt-heading" class="section-heading reveal reveal-d1">
+          Schreib uns — wir melden uns<br>innerhalb von 24 Stunden.
+        </h2>
+        <p class="section-desc mx-auto text-center reveal reveal-d2">
+          Kein Standardangebot. Kein Verkaufsdruck. Wir lesen deine Nachricht, denken nach
+          und kommen mit einer ehrlichen Einschätzung auf dich zu.
+        </p>
+      </div>
+
+      <div style="max-width: 640px; margin: 0 auto;">
         <form id="contact-form" class="reveal" novalidate>
-          <!-- Honeypot Spam-Schutz (versteckt vor echten Nutzern) -->
-          <div style="display:none" aria-hidden="true">
-            <label for="_honeypot">Dieses Feld bitte leer lassen</label>
+
+          <div style="display: none;" aria-hidden="true">
             <input type="text" id="_honeypot" name="_honeypot" tabindex="-1" autocomplete="off">
           </div>
 
           <div class="form-grid">
             <div class="form-group">
-              <label for="c-name" class="form-label">Name *</label>
-              <input type="text" id="c-name" name="name" class="form-input"
-                placeholder="Max Mustermann" required autocomplete="name"
-                maxlength="100">
+              <label for="c-name" class="form-label">Dein Name *</label>
+              <input type="text" id="c-name" name="name" class="form-input" placeholder="Max Mustermann" required
+                autocomplete="name" maxlength="100">
             </div>
+
             <div class="form-group">
-              <label for="c-email" class="form-label">E-Mail *</label>
-              <input type="email" id="c-email" name="email" class="form-input"
-                placeholder="max@unternehmen.de" required autocomplete="email"
-                maxlength="200">
+              <label for="c-email" class="form-label">E-Mail-Adresse *</label>
+              <input type="email" id="c-email" name="email" class="form-input" placeholder="max@firma.de" required
+                autocomplete="email" maxlength="200">
             </div>
+
             <div class="form-group">
               <label for="c-company" class="form-label">Unternehmen</label>
-              <input type="text" id="c-company" name="company" class="form-input"
-                placeholder="Dein Unternehmen" autocomplete="organization"
-                maxlength="200">
+              <input type="text" id="c-company" name="company" class="form-input" placeholder="Dein Unternehmen"
+                autocomplete="organization" maxlength="200">
             </div>
+
             <div class="form-group">
-              <label for="c-service" class="form-label">Interesse an</label>
-              <select id="c-service" name="service" class="form-input" style="cursor:pointer">
-                <option value="" disabled selected>Bitte wählen</option>
+              <!-- Framing: "Wo drückt der Schuh?" aktiviert Problem-Bewusstsein -->
+              <label for="c-service" class="form-label">Wo drückt der Schuh?</label>
+              <select id="c-service" name="service" class="form-input" style="cursor: pointer;">
+                <option value="" disabled selected>Bereich wählen …</option>
                 <option value="Werbevideos">Werbevideos</option>
-                <option value="Webdesign">Webdesign & Entwicklung</option>
+                <option value="Webdesign">Webdesign &amp; Entwicklung</option>
                 <option value="Social Media">Social Media Marketing</option>
-                <option value="Komplettpaket">Komplettpaket</option>
+                <option value="Komplettpaket">Alles — ich brauche ein Komplettpaket</option>
+                <option value="Noch unklar">Noch nicht sicher</option>
               </select>
             </div>
+
             <div class="form-group full">
-              <label for="c-msg" class="form-label">Deine Nachricht *</label>
+              <label for="c-msg" class="form-label">Deine Situation *</label>
+              <!-- Placeholder gibt Orientierung, was hilfreiche Antworten sind -->
               <textarea id="c-msg" name="message" class="form-input form-textarea"
-                placeholder="Erzähl uns kurz von deinem Projekt …" required
-                maxlength="2000"></textarea>
+                placeholder="Was willst du mit deinem Marketing erreichen? Wo stockt es gerade? Je mehr du uns mitgibst, desto konkreter können wir helfen."
+                required maxlength="2000"></textarea>
             </div>
           </div>
 
-          <div style="margin-top:var(--s5)">
-            <button type="submit" class="btn btn-primary" style="width:100%">
-              Nachricht senden
+          <div style="margin-top: var(--s5);">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Jetzt kostenlos anfragen
             </button>
           </div>
-          <p class="form-hint" style="margin-top:var(--s3);text-align:center">
-            Deine Daten werden vertraulich behandelt und nicht weitergegeben.
-            <a href="datenschutz.html" style="color:var(--gray-4);text-decoration:underline">Datenschutzerklärung</a>
+
+          <!-- Trust-Signale direkt neben dem Absende-Button — wo die Entscheidung fällt -->
+          <div class="trust-badges">
+            <span class="trust-badge">Antwort in max. 24 Stunden</span>
+            <span class="trust-badge">Kostenlos &amp; unverbindlich</span>
+            <span class="trust-badge">Kein Verkaufsdruck</span>
+            <span class="trust-badge">Persönlich — kein Ticketsystem</span>
+          </div>
+
+          <p class="form-hint" style="margin-top: var(--s4); text-align: center;">
+            Deine Daten werden vertraulich behandelt und nicht weitergegeben. ·
+            <a href="datenschutz.html" style="color: var(--gray-4); text-decoration: underline;">
+              Datenschutzerklärung
+            </a>
           </p>
         </form>
       </div>
+
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══ Footer ══ -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
+
         <div class="footer-brand">
-          <a href="/" class="nav-logo" aria-label="AMPLIFYD Digital – Zur Startseite">
-            <img src="assets/images/logo.png" alt="AMPLIFYD Digital" width="32" height="32" loading="lazy">
+          <a href="/" class="nav-logo" aria-label="AMPLIFYD Digital — Startseite">
+            <img src="/assets/images/logo.png" alt="AMPLIFYD Digital" width="30" height="30" loading="lazy">
             AMPLIFYD
           </a>
-          <p>Premium Digitalagentur für Marken, die nicht mitspielen — sondern dominieren.</p>
+          <p>Premium Digitalagentur für Marken, die nicht mitspielen — sondern dominieren. Aus Mannheim, deutschlandweit
+            tätig.</p>
         </div>
-        <div>
-          <h3 class="footer-heading">Leistungen</h3>
+
+        <nav aria-label="Leistungen">
+          <span class="footer-heading">Leistungen</span>
           <ul>
             <li><a href="leistungen.html#videos">Werbevideos</a></li>
             <li><a href="leistungen.html#webdesign">Webdesign</a></li>
             <li><a href="leistungen.html#social">Social Media</a></li>
           </ul>
-        </div>
-        <div>
-          <h3 class="footer-heading">Agentur</h3>
+        </nav>
+
+        <nav aria-label="Agentur">
+          <span class="footer-heading">Agentur</span>
           <ul>
             <li><a href="projekte.html">Projekte</a></li>
             <li><a href="insights.html">Insights</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
-        </div>
-        <div>
-          <h3 class="footer-heading">Rechtliches</h3>
+        </nav>
+
+        <nav aria-label="Rechtliches">
+          <span class="footer-heading">Rechtliches</span>
           <ul>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutz</a></li>
           </ul>
-        </div>
+        </nav>
+
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2026 AMPLIFYD Digital. Alle Rechte vorbehalten.</p>
-        <p style="display:flex;gap:20px">
-          <a href="https://instagram.com/amplifyd.digital" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-          <a href="https://linkedin.com/company/amplifyd-digital" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-          <a href="https://tiktok.com/@amplifyd.digital" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+        <p style="display: flex; gap: 20px;">
+          <a href="https://instagram.com/amplifyd.digital" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">Instagram</a>
+          <a href="https://linkedin.com/company/amplifyd-digital" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://tiktok.com/@amplifyd.digital" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok">TikTok</a>
         </p>
       </div>
     </div>
@@ -349,7 +584,7 @@
       <div class="cookie-inner">
         <p class="cookie-text">
           Wir verwenden ausschließlich technisch notwendige Cookies.
-          <a href="datenschutz.html">Datenschutzerklärung</a>
+          <a href="datenschutz.html">Mehr erfahren</a>
         </p>
         <div class="cookie-actions">
           <button class="cookie-btn cookie-btn-decline" id="cookie-decline">Ablehnen</button>
@@ -361,4 +596,5 @@
 
   <script src="app.js" defer></script>
 </body>
+
 </html>
