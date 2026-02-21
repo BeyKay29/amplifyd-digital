@@ -1776,6 +1776,7 @@ details.card p {
 
   .proof-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--s4);
   }
 
   .footer-grid {
@@ -1837,6 +1838,26 @@ details.card p {
 
   details.card p {
     padding: 0 var(--s5) var(--s4);
+  }
+
+}
+
+/* ── Mobile Optimierung (≤ 640px) ── */
+@media (max-width: 640px) {
+  .proof-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .proof-grid .card {
+    padding: var(--s5) !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    /* Slightly smaller for better fit */
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 

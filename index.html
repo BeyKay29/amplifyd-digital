@@ -126,10 +126,15 @@
       right: 32px;
       font-size: 7rem;
       font-weight: 800;
-      color: rgba(255, 255, 255, 0.02);
+      color: rgba(255, 255, 255, 0.08);
       line-height: 1;
       pointer-events: none;
       user-select: none;
+      transition: color 0.4s var(--ease);
+    }
+
+    .process-step:hover .process-step-num {
+      color: rgba(255, 255, 255, 0.15);
     }
 
     .process-step h3 {
@@ -400,8 +405,8 @@
   <section aria-labelledby="proof-heading" style="padding: var(--s9) 0;">
     <div class="container text-center">
       <span class="section-eyebrow reveal">Ergebnisse</span>
-      <h2 id="proof-heading" class="reveal reveal-d1" style="max-width: 640px; margin: 0 auto var(--s7);">
-        Was passiert, wenn Marketing<br>wirklich funktioniert.
+      <h2 id="proof-heading" class="reveal reveal-d1" style="max-width: 680px; margin: 0 auto var(--s7);">
+        Was passiert, wenn Marketing wirklich funktioniert.
       </h2>
 
       <div class="proof-grid">
