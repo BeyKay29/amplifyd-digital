@@ -1885,10 +1885,7 @@ canvas#bgCanvas {
   }
 
   .stats-row {
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: var(--s5);
-    align-items: flex-start;
+    display: none;
   }
 
   .proof-grid {
