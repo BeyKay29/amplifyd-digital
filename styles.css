@@ -1784,6 +1784,7 @@ canvas#bgCanvas {
   width: 100%;
   height: 100%;
   display: block;
+  overflow: visible;
 }
 
 .usp-item h3 {
@@ -1980,11 +1981,25 @@ canvas#bgCanvas {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: var(--s7) var(--s5);
   }
 
   .usp-icon {
+    width: 48px;
+    height: 48px;
     margin-right: 0 !important;
-    margin-bottom: var(--s4);
+    margin-bottom: var(--s5);
+  }
+
+  .usp-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--s2);
+  }
+
+  .usp-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 280px;
   }
 
   h1 {
