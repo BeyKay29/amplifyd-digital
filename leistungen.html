@@ -93,117 +93,9 @@
 
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="apple-touch-icon" href="assets/images/logo.png">
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-        /* ── Tab-Navigation ── */
-        .tab-bar {
-            display: flex;
-            gap: 4px;
-            background: var(--anthracite-2);
-            border-radius: var(--r-full);
-            padding: 4px;
-            max-width: 520px;
-            margin: 0 auto var(--s7);
-        }
 
-        .tab-btn {
-            flex: 1;
-            padding: 12px 20px;
-            border-radius: var(--r-full);
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: var(--gray-3);
-            cursor: pointer;
-            transition: all var(--t-fast);
-            text-align: center;
-            border: none;
-            background: none;
-        }
-
-        .tab-btn.active {
-            background: var(--white);
-            color: var(--black);
-        }
-
-        .tab-btn:hover:not(.active) {
-            color: var(--white);
-        }
-
-        .pricing-panel {
-            display: none;
-        }
-
-        .pricing-panel.active {
-            display: grid;
-        }
-
-        /* ── Kategorie-Intro über Pricing-Cards ── */
-        .category-intro {
-            text-align: center;
-            max-width: 640px;
-            margin: 0 auto var(--s7);
-            padding: var(--s5) var(--s6);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            background: var(--anthracite-2);
-        }
-
-        .category-intro p {
-            font-size: 0.95rem;
-            color: var(--gray-3);
-            line-height: 1.65;
-            margin: 0;
-        }
-
-        .category-intro strong {
-            color: var(--white);
-        }
-
-        /* ── Warum AMPLIFYD — Differenzierungssektion ── */
-        .usp-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--s4);
-            margin-top: var(--s7);
-        }
-
-        @media (max-width: 600px) {
-            .usp-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .usp-item {
-            display: flex;
-            gap: var(--s4);
-            padding: var(--s5);
-            background: var(--anthracite-2);
-            border: 1px solid var(--border);
-            border-radius: var(--r-lg);
-            align-items: flex-start;
-        }
-
-        .usp-icon {
-            font-size: 1.3rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .usp-item h3 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 4px;
-        }
-
-        .usp-item p {
-            font-size: 0.82rem;
-            color: var(--gray-3);
-            line-height: 1.55;
-            margin: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -277,7 +169,10 @@
     <section style="padding: var(--s10) 0;" aria-labelledby="pricing-heading">
         <div class="container">
 
-            <h2 id="pricing-heading" class="sr-only">Unsere Leistungspakete</h2>
+            <div class="text-center reveal" style="margin-bottom: var(--s8);">
+                <span class="section-eyebrow">Preise &amp; Pakete</span>
+                <h2 id="pricing-heading" class="section-heading">Unsere Leistungspakete</h2>
+            </div>
 
             <!-- Tab Navigation -->
             <div class="tab-bar reveal" role="tablist" aria-label="Leistungskategorie wählen">
@@ -540,7 +435,17 @@
 
             <div class="usp-grid">
                 <div class="usp-item reveal reveal-d1">
-                    <div class="usp-icon" aria-hidden="true">🔒</div>
+                    <div class="usp-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F5F5F7"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+                                style="stroke-dasharray: 100; stroke-dashoffset: 100; animation: drawLineLoop 4s infinite ease-in-out; --path-length: 100;" />
+                            <line x1="7" y1="7" x2="7.01" y2="7" stroke-width="3"
+                                style="animation: fadeInOut 4s infinite ease-in-out;" />
+                            <path d="M15 17l2 2 4-4" stroke="#0A84FF" stroke-width="2"
+                                style="stroke-dasharray: 20; stroke-dashoffset: 20; animation: drawLineLoop 4s infinite ease-in-out; --path-length: 20;" />
+                        </svg>
+                    </div>
                     <div>
                         <h3>Keine versteckten Kosten</h3>
                         <p>Der Preis aus dem Angebot ist der Endpreis. Was vereinbart ist, gilt. Keine Nachberechnungen,
@@ -549,7 +454,15 @@
                 </div>
 
                 <div class="usp-item reveal reveal-d2">
-                    <div class="usp-icon" aria-hidden="true">👤</div>
+                    <div class="usp-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F5F5F7"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                            <circle cx="18" cy="18" r="3" fill="#0A84FF" stroke="none"
+                                style="animation: pulseBlueLoop 2s infinite ease-in-out; transform-origin: 18px 18px;" />
+                        </svg>
+                    </div>
                     <div>
                         <h3>Ein Ansprechpartner. Immer.</h3>
                         <p>Kein Ticketsystem, kein Durchreichen zwischen Abteilungen. Du hast eine direkte Nummer zu
@@ -558,7 +471,17 @@
                 </div>
 
                 <div class="usp-item reveal reveal-d3">
-                    <div class="usp-icon" aria-hidden="true">📊</div>
+                    <div class="usp-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F5F5F7"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="21" x2="21" y2="21" opacity="0.3" />
+                            <line x1="3" y1="21" x2="3" y2="3" opacity="0.3" />
+                            <path d="M3 17l6-6 4 3 8-10" stroke="#0A84FF" stroke-width="2"
+                                style="stroke-dasharray: 100; stroke-dashoffset: 100; animation: drawLineLoop 5s infinite ease-in-out; --path-length: 100;" />
+                            <circle cx="21" cy="4" r="2" fill="#0A84FF" stroke="none"
+                                style="animation: fadeInOut 5s infinite ease-in-out;" />
+                        </svg>
+                    </div>
                     <div>
                         <h3>Alles messbar, alles transparent</h3>
                         <p>Wir tracken, was wirklich zählt: Anfragen, Conversions, Reichweite. Und wir erklären dir, was
@@ -567,7 +490,15 @@
                 </div>
 
                 <div class="usp-item reveal reveal-d4">
-                    <div class="usp-icon" aria-hidden="true">📅</div>
+                    <div class="usp-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#F5F5F7"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="11" width="14" height="10" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#0A84FF"
+                                style="transform-origin: 17px 10px; animation: springOpenLoop 3s infinite ease-in-out;" />
+                            <circle cx="12" cy="16" r="1.5" opacity="0.3" />
+                        </svg>
+                    </div>
                     <div>
                         <h3>Kein Jahresvertrag</h3>
                         <p>Social Media ist monatlich kündbar nach der Mindestlaufzeit. Wir halten unsere Kunden durch

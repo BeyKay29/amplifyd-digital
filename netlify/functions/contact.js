@@ -88,11 +88,11 @@ exports.handler = async event => {
     };
 
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const recipientMail = process.env.CONTACT_EMAIL || 'kontakt@amplifyd.digital';
+    const recipientMail = process.env.CONTACT_EMAIL || 'Info@amplifyd.de';
 
     try {
         await resend.emails.send({
-            from: 'AMPLIFYD Digital <kontakt@amplifyd.digital>',
+            from: 'AMPLIFYD Digital <Info@amplifyd.de>',
             to: recipientMail,
             replyTo: data.email,
             subject: `Neue Anfrage von ${safe.name}`,
