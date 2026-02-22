@@ -1992,6 +1992,42 @@ canvas#bgCanvas {
   .pricing-card {
     padding: var(--s5);
   }
+
+  /* Scale background animations down */
+  .orb-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+    opacity: 0.4;
+  }
+
+  .orb-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    right: -80px;
+    opacity: 0.3;
+  }
+
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+  }
+
+  .sweep-line {
+    display: none;
+  }
+
+  .hero-visual {
+    max-width: 300px !important;
+    margin: var(--s4) auto 0;
+  }
+
+  .hero-visual svg {
+    max-height: 400px;
+  }
 }
 
 /* Reduced Motion */
