@@ -99,6 +99,12 @@ body {
   overflow-x: hidden;
 }
 
+html.lock-scroll,
+body.lock-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
 img,
 video {
   max-width: 100%;
@@ -487,6 +493,12 @@ details.card p {
   padding: 12px 0;
 }
 
+.nav,
+.nav-cta,
+.nav-links {
+  transition: all var(--t-base);
+}
+
 .nav.menu-open {
   background: #000000 !important;
   backdrop-filter: none !important;
@@ -587,13 +599,14 @@ details.card p {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s var(--ease), visibility 0.4s;
+  transition: opacity 0.4s var(--ease), visibility 0s linear 0.4s;
 }
 
 .nav-mobile.open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition: opacity 0.4s var(--ease), visibility 0s linear;
 }
 
 .nav-mobile a {
