@@ -1994,10 +1994,15 @@ canvas#bgCanvas {
 
   h2 {
     font-size: 1.6rem !important;
-    line-height: 1.2;
+    line-height: 1.15;
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: break-word;
+    max-width: 100%;
+  }
+
+  .br-desktop {
+    display: none;
   }
 
   .section-desc,
