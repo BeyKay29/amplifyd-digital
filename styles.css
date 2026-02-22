@@ -228,6 +228,12 @@ section {
   padding: var(--s11) 0;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: var(--s9) 0;
+  }
+}
+
 .section-divider {
   height: 1px;
   background: var(--accent-border);
@@ -801,29 +807,29 @@ details.card p {
 }
 
 .pricing-card.featured {
-  background: var(--white);
-  color: var(--black);
-  border-color: transparent;
+  background: var(--anthracite-3);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transform: scale(1.03);
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
 .pricing-card.featured .pricing-feature,
 .pricing-card.featured .pricing-period {
-  color: var(--gray-1);
+  color: var(--gray-4);
 }
 
 .pricing-card.featured .pricing-price {
-  color: var(--black);
+  color: var(--white);
 }
 
 .pricing-card.featured .btn-primary {
-  background: var(--black);
-  color: var(--white) !important;
+  background: var(--white);
+  color: var(--black) !important;
 }
 
 .pricing-card.featured .btn-primary:hover {
-  background: var(--anthracite-3);
+  background: var(--gray-5);
 }
 
 .pricing-badge {
@@ -1856,13 +1862,18 @@ canvas#bgCanvas {
     display: none;
   }
 
+  .nav-bar {
+    padding: var(--s4) 0;
+  }
+
   .nav-toggle {
     display: flex;
+    margin-right: -8px;
   }
 
   .hero {
     min-height: auto;
-    padding: 130px 0 var(--s9);
+    padding: 120px 0 var(--s8);
   }
 
   .hero-grid {
@@ -1960,11 +1971,42 @@ canvas#bgCanvas {
     padding: var(--s5) !important;
   }
 
+  .usp-grid {
+    grid-template-columns: 1fr;
+    gap: var(--s6);
+  }
+
+  .usp-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .usp-icon {
+    margin-right: 0 !important;
+    margin-bottom: var(--s4);
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
+    line-height: 1.1;
+  }
+
   h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
+    line-height: 1.2;
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: break-word;
+  }
+
+  .section-desc,
+  .hero-desc,
+  .service-card p,
+  .process-step p,
+  .article-excerpt {
+    color: var(--gray-4) !important;
+    font-size: 1rem;
   }
 
   .tab-bar {
@@ -1974,6 +2016,7 @@ canvas#bgCanvas {
     padding: 6px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
   }
 
   .tab-bar::-webkit-scrollbar {
